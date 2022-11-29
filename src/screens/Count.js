@@ -33,11 +33,11 @@ const Count = () => {
         <button onClick={() => handleCurrentCount1(+1)}>+</button>
         <p>{count}</p>
       </div>
-      <div>
+      {/* <div>
         <button onClick={() => handleCurrentCount2(-1)}>-</button>
         <button onClick={() => handleCurrentCount2(+1)}>+</button>
         <p>{count}</p>
-      </div>
+      </div> */}
     </div>
   );
 };
