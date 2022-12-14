@@ -58,6 +58,7 @@ const CountUseEffect = () => {
     }, 1000);
 
     //⑦ストリクトモードで見るとクリーンアップが必要なことがわかる
+    //strictモードは本番ではなくなるのでuseEffectなどバグチェックがメインになる
     return () => {
       clearInterval(interval);
     };

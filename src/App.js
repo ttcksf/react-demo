@@ -5,19 +5,14 @@ import UseEffectHome from "./screens/UseEffectHome";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import UseEffectPost from "./components/UseEffectPost";
 import UseEffectUser from "./components/UseEffectUser";
+import Counter from "./screens/Counter";
+import Debounce from "./screens/Debounce";
+import ManyInput from "./screens/ManyInput";
 
 function App() {
   return (
     <>
-      {/* <CountUseEffect /> */}
-      <BrowserRouter>
-        <Routes>
-          <Route path={"/"} exact element={<UseEffectHome />} />
-          <Route path={"/posts"} element={<UseEffectPost />} />
-          <Route path={"/user"} element={<UseEffectUser />} />
-          <Route path={"/user/:id"} element={<UseEffectUser />} />
-        </Routes>
-      </BrowserRouter>
+      <ManyInput />
     </>
   );
 }
