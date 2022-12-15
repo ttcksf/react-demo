@@ -1,114 +1,103 @@
 import React, { useRef, useState } from "react";
 
 const ManyInput = () => {
-  //1個ずつステートを管理するのは面倒
   // const [name, setName] = useState("");
-  // const handleChangeName = () => {
+  // const [age, setAge] = useState("");
+  // const [post, setPost] = useState("");
+  // const [address, setAddress] = useState("");
+  // const [tel, setTel] = useState("");
+  // const [email, setEmail] = useState("");
+
+  // const handleName = (e) => {
   //   setName(e.target.value);
   // };
-  //初期値がオブジェクトのものにまとめる
-  // const [user, setUser] = useState({
-  //   name: "",
-  //   age: "",
-  //   post: "",
-  //   address: "",
-  //   tel: "",
-  //   email: "",
-  // });
-  // const handleChange = (e) => {
-  //   setUser((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  // const handleAge = (e) => {
+  //   setAge(e.target.value);
   // };
-  // console.log(user);
+  // const handlePost = (e) => {
+  //   setPost(e.target.value);
+  // };
+  // const handleAddress = (e) => {
+  //   setAddress(e.target.value);
+  // };
+  // const handleTel = (e) => {
+  //   setTel(e.target.value);
+  // };
+  // const handleEmail = (e) => {
+  //   setEmail(e.target.value);
+  // };
 
-  //レンダリングさせたくない時はuseRef
-  const nameRef = useRef();
-  const ageRef = useRef();
-  const postRef = useRef();
-  const addressRef = useRef();
-  const telRef = useRef();
-  const emailRef = useRef();
+  // console.log(name);
+  // console.log(age);
+  // console.log(post);
+  // console.log(address);
+  // console.log(tel);
+  // console.log(email);
+
+  const [user, setUser] = useState({
+    name: "",
+    age: "",
+    post: "",
+    address: "",
+    tel: "",
+    email: "",
+  });
+
+  const handleUser = (e) => {
+    //スプレッド構文でオブジェクトの中身を上書きする
+    //e.target.nameでinputタグのname属性と付き合わせする
+    setUser((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+  console.log(user);
 
   return (
-    // <div>
-    //   <form>
-    //     <div>
-    //       <input
-    //         onChange={handleChange}
-    //         type="text"
-    //         name="name"
-    //         placeholder="お名前"
-    //       />
-    //     </div>
-    //     <div>
-    //       <input
-    //         onChange={handleChange}
-    //         type="text"
-    //         name="age"
-    //         placeholder="年齢"
-    //       />
-    //     </div>
-    //     <div>
-    //       <input
-    //         onChange={handleChange}
-    //         type="text"
-    //         name="post"
-    //         placeholder="郵便番号"
-    //       />
-    //     </div>
-    //     <div>
-    //       <input
-    //         onChange={handleChange}
-    //         type="text"
-    //         name="address"
-    //         placeholder="住所"
-    //       />
-    //     </div>
-    //     <div>
-    //       <input
-    //         onChange={handleChange}
-    //         type="text"
-    //         name="tel"
-    //         placeholder="電話番号"
-    //       />
-    //     </div>
-    //     <div>
-    //       <input
-    //         onChange={handleChange}
-    //         type="text"
-    //         name="email"
-    //         placeholder="メールアドレス"
-    //       />
-    //     </div>
-    //   </form>
-    // </div>
-
     <div>
       <form>
         <div>
-          <input ref={nameRef} type="text" name="name" placeholder="お名前" />
-        </div>
-        <div>
-          <input ref={ageRef} type="text" name="age" placeholder="年齢" />
-        </div>
-        <div>
-          <input ref={postRef} type="text" name="post" placeholder="郵便番号" />
+          <input
+            name="name"
+            onChange={handleUser}
+            type="text"
+            placeholder="お名前"
+          />
         </div>
         <div>
           <input
-            ref={addressRef}
+            name="age"
+            onChange={handleUser}
             type="text"
+            placeholder="年齢"
+          />
+        </div>
+        <div>
+          <input
+            name="post"
+            onChange={handleUser}
+            type="text"
+            placeholder="郵便番号"
+          />
+        </div>
+        <div>
+          <input
             name="address"
+            onChange={handleUser}
+            type="text"
             placeholder="住所"
           />
         </div>
         <div>
-          <input ref={telRef} type="text" name="tel" placeholder="電話番号" />
+          <input
+            name="tel"
+            onChange={handleUser}
+            type="text"
+            placeholder="電話番号"
+          />
         </div>
         <div>
           <input
-            ref={emailRef}
-            type="text"
             name="email"
+            onChange={handleUser}
+            type="text"
             placeholder="メールアドレス"
           />
         </div>

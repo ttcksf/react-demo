@@ -12,7 +12,8 @@ import ManyInput from "./screens/ManyInput";
 function App() {
   return (
     <>
-      <ManyInput />
+      {/* <ManyInput /> */}
+      <Debounce />
     </>
   );
 }
