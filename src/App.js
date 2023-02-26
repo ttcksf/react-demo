@@ -1,14 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
-
-import FetchApi from "./screens/FetchApi";
-import FetchApiReducer from "./screens/FetchApiReducer";
+import InputForm from "./screens/eTarget/InputForm";
+import FetchData from "./screens/useHook/FetchData";
 
 function App() {
   return (
     <>
-      {/* <FetchApi /> */}
-      <FetchApiReducer />
+      <FetchData />
     </>
   );
 }
