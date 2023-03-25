@@ -1,10 +1,10 @@
 import "./App.css";
-import UseStateBasic from "./screens/UseStateBasic";
+import PropsBasic from "./screens/PropsBasic/PropsBasic";
 
 function App() {
   return (
     <>
-      <UseStateBasic />
+      <PropsBasic />
     </>
   );
 }
