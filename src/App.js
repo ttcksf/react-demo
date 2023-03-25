@@ -1,12 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
-import InputForm from "./screens/eTarget/InputForm";
-import FetchData from "./screens/useHook/FetchData";
+import UseStateBasic from "./screens/UseStateBasic";
 
 function App() {
   return (
     <>
-      <FetchData />
+      <UseStateBasic />
     </>
   );
 }
