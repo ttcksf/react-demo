@@ -1,10 +1,9 @@
 import "./App.css";
-import PropsBasic from "./screens/PropsBasic/PropsBasic";
-
+import FetchApi from "./screens/wrongId/FetchApi";
 function App() {
   return (
     <>
-      <PropsBasic />
+      <FetchApi />
     </>
   );
 }
