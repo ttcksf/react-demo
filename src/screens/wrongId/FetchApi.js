@@ -8,8 +8,8 @@ const FetchApi = () => {
     setInputText(e.target.value);
   };
 
-  const addTask = () => {
-    // e.preventDefault();
+  const addTask = (e) => {
+    e.preventDefault();
     setTaskList([
       ...taskList,
       {
@@ -30,10 +30,12 @@ const FetchApi = () => {
   return (
     <>
       <form>
+        {/* 引数が不要なため関数名のみ */}
         <input type="text" onChange={handleChange} value={inputText} />
         {/* 画面が表示された時に実行するという意味。addTaskの中の送信防止にeが必要になるが画面が表示された時にはイベントがないため正常に動作しない。 */}
         {/* <button onClick={addTask(e)}>追加</button> */}
         {/* イベントが発生した時に関数の実行という意味 */}
+        {/* またReactの場合、第一引数はeと決まっていてそうでないときは省略して第二引数のみ書く */}
         <button onClick={(e) => addTask(e)}>追加</button>
         {/* 今回の場合だとformタグを消してeがなくてもaddTaskが動作するように変更してもよい。 */}
         {/* <button onClick={() => addTask()}>追加</button> */}
@@ -48,6 +50,7 @@ const FetchApi = () => {
               {/* 画面が表示された時に実行するという意味。handleDeleteはどれを消すかを指定しないといけないから正常な動作にならない */}
               {/* <button onClick={handleDelete(task.id)}>削除</button> */}
               {/* クリックした時に関数の実行という意味 */}
+              {/* またReactの場合、第一引数はeと決まっていてそうでないときは省略して第二引数のみ書く */}
               <button onClick={() => handleDelete(task.id)}>削除</button>
             </div>
           </div>
