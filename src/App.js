@@ -1,9 +1,10 @@
 import "./App.css";
-import FetchApi from "./screens/wrongId/FetchApi";
+import ArrayObj from "./screens/wrongOperator/ArrayObj";
+
 function App() {
   return (
-    <div className="App">
-      <FetchApi />
+    <div>
+      <ArrayObj />
     </div>
   );
 }
