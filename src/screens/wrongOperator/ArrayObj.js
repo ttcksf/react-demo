@@ -20,7 +20,7 @@ const ArrayObj = () => {
       <div>{false}</div>
       <div>{undefined}</div> */}
       {/* 配列は1個以上ある時にデータがあると見なす */}
-      {arr.length > 0 && arr.map((item, i) => <h1 key={i}>{item}</h1>)}
+      {/* {arr.length > 0 && arr.map((item, i) => <h1 key={i}>{item}</h1>)} */}
 
       {/* オブジェクトの場合は特に気にしなくて良い、null,undefined,0,falseもカバーできる */}
       {obj && <h1>{obj.name}</h1>}

@@ -1,12 +1,8 @@
+import { useState } from "react";
 import "./App.css";
-import ArrayObj from "./screens/wrongOperator/ArrayObj";
 
 function App() {
-  return (
-    <div>
-      <ArrayObj />
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;

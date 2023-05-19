@@ -14,8 +14,8 @@ const FetchApi = () => {
       ...taskList,
       {
         // 配列の長さにすると削除で連番崩れや重複が起きる
-        // id: taskList.length,
-        id: crypto.randomUUID(),
+        id: taskList.length,
+        // id: crypto.randomUUID(),
         text: inputText,
       },
     ]);
