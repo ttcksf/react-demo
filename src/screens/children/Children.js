@@ -11,6 +11,17 @@ const Children = (props) => {
       <p>{props.text}</p>
       {/* <p>{children}</p> */}
       {props.children}
+
+      {/* 親でのコーディング例 */}
+      {/* <Children text="これはpropsのtextです"> */}
+      {/* childrenはpropsのプロパティの一種で、親で書いたコーディング内容をそのまま送れるのが特徴 */}
+      {/* <p>これはpropsのchildrenです。</p> */}
+      {/* </Children> */}
+      {/* <hr /> */}
+      {/* <Children text="これはpropsのtextです"> */}
+      {/* childrenはpropsのプロパティの一種で、親で書いたコーディング内容をそのまま送れるのが特徴 */}
+      {/* <h1>コピーしました</h1> */}
+      {/* </Children> */}
     </div>
   );
 };
