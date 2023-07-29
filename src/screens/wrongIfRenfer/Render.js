@@ -8,12 +8,8 @@ const Render = () => {
   return (
     <div>
       {/* isAdminは変わっているが親の状態でしかなく子は変更ないため子の再レンダリングは走らない */}
-      {/* {isAdmin ? (
-          <Counter name="管理者" />
-      ) : (
-          <Counter name="スタッフ" />
-      )} */}
-      {/* 例えば子の表示内容を変えるようにすれば再レンダリングでカウントがリセットされる　 */}
+      {/* {isAdmin ? <Counter name="管理者" /> : <Counter name="スタッフ" />} */}
+      {/* 例えば子の表示内容を変えるようにすれば再レンダリングでカウントがリセットされる */}
       {/* {isAdmin ? (
         <div>
           <Counter name="管理者" />
