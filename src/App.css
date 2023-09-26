@@ -36,12 +36,3 @@
     transform: rotate(360deg);
   }
 }
-.todoList {
-  margin: 16px;
-  width: 400px;
-}
-.todo {
-  padding: 8px 16px;
-  background: #eee;
-  border-bottom: 1px solid #fff;
-}

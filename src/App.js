@@ -1,11 +1,18 @@
 import "./App.css";
-import DragDrop from "./screens/dragDrop/DragDrop";
+import UseSearch from "./screens/useSearch/UseSearch";
+import UseNext from "./screens/useSearch/UseNext";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <DragDrop />
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path={"/"} exact element={<UseSearch />} />
+          <Route path={"/next"} element={<UseNext />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
