@@ -1,17 +1,11 @@
 import "./App.css";
-import UseSearch from "./screens/useSearch/UseSearch";
-import UseNext from "./screens/useSearch/UseNext";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import BegginerMistake1 from "./screens/begginer-mistake/BegginerMistake1";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path={"/"} exact element={<UseSearch />} />
-          <Route path={"/next"} element={<UseNext />} />
-        </Routes>
-      </BrowserRouter>
+      <BegginerMistake1 />
     </>
   );
 }

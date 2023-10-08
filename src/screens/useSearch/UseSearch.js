@@ -11,9 +11,9 @@ const UseSearch = () => {
     "Webデザイン",
     "SNSマーケティング",
   ];
-  // const [keyword, setKeyword] = useState("");
-  const [searchParams, setSearchParams] = useSearchParams({ keyword: "" });
-  const keyword = searchParams.get("keyword");
+  const [keyword, setKeyword] = useState("");
+  // const [searchParams, setSearchParams] = useSearchParams({ keyword: "" });
+  // const keyword = searchParams.get("keyword");
   const results = data.filter((item) => {
     return item.includes(keyword);
   });
@@ -28,13 +28,13 @@ const UseSearch = () => {
           type="text"
           id={keyword}
           value={keyword}
-          // onChange={(e) => setKeyword(e.target.value)}
-          onChange={(e) =>
-            setSearchParams((prev) => {
-              prev.set("keyword", e.target.value);
-              return prev;
-            })
-          }
+          onChange={(e) => setKeyword(e.target.value)}
+          // onChange={(e) =>
+          //   setSearchParams((prev) => {
+          //     prev.set("keyword", e.target.value);
+          //     return prev;
+          //   })
+          // }
         />
         {results.map((result) => (
           <p key={result}>{result}</p>
