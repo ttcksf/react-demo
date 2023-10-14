@@ -1,12 +1,11 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import BegginerMistake1 from "./screens/begginer-mistake/BegginerMistake1";
-import BegginerMistake2 from "./screens/begginer-mistake/BegginerMistake2";
+import BegginerMistakes3 from "./screens/begginer-mistake/BegginerMistakes3";
 
 function App() {
   return (
     <>
-      <BegginerMistake2 />
+      <BegginerMistakes3 />
     </>
   );
 }
