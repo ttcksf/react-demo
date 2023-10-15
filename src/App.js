@@ -1,11 +1,13 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import BegginerMistakes3 from "./screens/begginer-mistake/BegginerMistakes3";
+import About from "./screens/comBtn/About";
+import Service from "./screens/comBtn/Service";
 
 function App() {
   return (
     <>
-      <BegginerMistakes3 />
+      <About />
+      <Service />
     </>
   );
 }
