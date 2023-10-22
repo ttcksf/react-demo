@@ -31,7 +31,7 @@ const studentsData = [
 ];
 
 const UseQuery = () => {
-  // useQueryというフックをインストールして使用する
+  // useQueryというフックをインストールして使用してデータ取得ができる
   // クエリをqueryKeyとして一意のキーワードを決める
   // /students/0001/
 
