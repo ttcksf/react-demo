@@ -1,11 +1,11 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import DemoCache from "./screens/reactQueryCache/DemoCache";
+import UseEffect from "./screens/useEffect-advance/UseEffect";
 
 function App() {
   return (
     <>
-      <DemoCache />
+      <UseEffect />
     </>
   );
 }

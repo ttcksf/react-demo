@@ -8,8 +8,8 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 const queryClient = new QueryClient({
   // タブの切り替えでレンダリング
-  // defaultOptions: { queries: { staleTime: 0 } },
-  defaultOptions: { queries: { staleTime: 5000 } },
+  defaultOptions: { queries: { staleTime: 0 } },
+  // defaultOptions: { queries: { staleTime: 5000 } },
 });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

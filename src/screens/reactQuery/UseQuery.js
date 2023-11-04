@@ -40,11 +40,11 @@ const UseQuery = () => {
     queryFn: (obj) => {
       // 非同期処理で動作してオブジェクトで管理される（クエリ、ステータスなど）
       // Promiseで返されると同じような仕組みで他の処理と並列で動作して成功、失敗を判定しながら動作
-      console.log(obj);
+      // console.log(obj);
       return [...studentsData];
     },
   });
-  console.log(studentsQuery);
+  // console.log(studentsQuery);
   console.log(studentsQuery.status);
   console.log(studentsQuery.data);
   // 非同期処理で動くためデータ取得よりもmapなど表示処理が早いとエラーになる
