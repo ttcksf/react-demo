@@ -1,16 +1,21 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import UseReactQuery from './screens/reactQuery/UseReactQuery';
-import UseState from './screens/reactQuery/UseState';
-import Todo from './screens/reactQuery/Todo';
-import { useQueryClient } from '@tanstack/react-query';
+import Contact from './screens/reactRouterDom/Contact';
+import Top from './screens/reactRouterDom/Top';
+import Posts from './screens/reactRouterDom/Posts';
+import Post from './screens/reactRouterDom/Post';
 
 function App() {
   return (
     <div className="App">
-      <UseReactQuery />
-      {/* <Todo /> */}
-      {/* <UseState /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Top />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/posts" element={<Posts />}></Route>
+          <Route path="posts/:id" element={<Post />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
