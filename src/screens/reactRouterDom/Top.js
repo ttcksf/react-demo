@@ -5,6 +5,7 @@ const Top = () => {
   return (
     <div>
       <ul>
+        {/* aタグを生成 */}
         <Link to="/">
           <li>トップ</li>
         </Link>
