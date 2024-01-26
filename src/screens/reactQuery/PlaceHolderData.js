@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import React from 'react';
+import { useQueryClient } from '@tanstack/react-query';
 // npm i @tanstack/react-query
 // npm i @tanstack/react-query-devtools
 // const queryClient = new QueryClient();
@@ -29,6 +30,10 @@ const studentsData = [
   },
 ];
 const PlaceHolderData = () => {
+  // ここを追加
+  const queryClient = useQueryClient();
+  console.log(queryClient);
+
   const studentsQuery = useQuery({
     queryKey: ['students'],
     queryFn: () => {
@@ -43,8 +48,8 @@ const PlaceHolderData = () => {
     ],
   });
   // console.log(studentsQuery);
-  console.log(studentsQuery.status);
-  console.log(studentsQuery.data);
+  // console.log(studentsQuery.status);
+  // console.log(studentsQuery.data);
 
   if (studentsQuery.status === 'pending') return <p>ローディング中・・・</p>;
   if (studentsQuery.status === 'error') return <p>エラー！</p>;
