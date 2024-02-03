@@ -22,7 +22,8 @@ const Top = () => {
           <li>お問い合わせ</li>
         </NavLink>
       </ul>
-      {/* {location.state.desc}は{location.state.text}です。 */}
+      {location.state.desc}
+      {location.state.text}です。
     </div>
   );
 };

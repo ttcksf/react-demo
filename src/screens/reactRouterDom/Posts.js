@@ -6,6 +6,7 @@ const Posts = () => {
   return (
     <div>
       Posts
+      <br />
       <Link to={`/posts/${id}`}>2024年のお知らせ</Link>
     </div>
   );

@@ -1,11 +1,24 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import UseContext from './screens/useContext/UseContext';
-
+import Products from './screens/useContext/Products';
+import Cart from './screens/useContext/Cart';
+import Menu from './screens/useContext/Menu';
+import { CartProvider } from './screens/useContext/CartContext';
 function App() {
+  // let count = 0;
   return (
-    <div className="App">
-      <UseContext />
-    </div>
+    <>
+      <CartProvider>
+        <BrowserRouter>
+          {/* <Menu count={count} /> */}
+          <Menu />
+          <Routes>
+            <Route path="/" element={<Products />} />
+            <Route path="/cart" element={<Cart />} />
+          </Routes>
+        </BrowserRouter>
+      </CartProvider>
+    </>
   );
 }
 

@@ -5,6 +5,7 @@ const Contact = () => {
   // 検索やフォームを取得するときはuseSearchParamsが必要
   const [params, setParams] = useSearchParams({ q: '' });
   const text = params.get('q');
+  console.log(text);
   const navigate = useNavigate();
   const desc = '検索キーワードは';
   return (
