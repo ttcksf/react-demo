@@ -1,10 +1,10 @@
 import './App.css';
-import NonStateManager from './screens/nonStateManager/NonStateManager';
+import UseReducer from './screens/useReducer/UseReducer';
 
 function App() {
   return (
     <>
-      <NonStateManager />
+      <UseReducer />
     </>
   );
 }
