@@ -1,10 +1,10 @@
 import './App.css';
-import UseReducer from './screens/useReducer/UseReducer';
+import ActiveHiddenStyle from './screens/active-hidden-style/ActiveHiddenStyle';
 
 function App() {
   return (
     <>
-      <UseReducer />
+      <ActiveHiddenStyle />
     </>
   );
 }
