@@ -1,7 +1,12 @@
 import './App.css';
+import WrongCounter from './screens/wrong-counter/WrongCounter';
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <WrongCounter />
+    </>
+  );
 }
 
 export default App;
