@@ -1,10 +1,10 @@
 import './App.css';
-import WrongCounter from './screens/wrong-counter/WrongCounter';
+import RenderingBasic from './screens/rendering-basic/RenderingBasic';
 
 function App() {
   return (
     <>
-      <WrongCounter />
+      <RenderingBasic />
     </>
   );
 }
