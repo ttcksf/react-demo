@@ -1,11 +1,13 @@
+import { useState } from 'react';
 import './App.css';
-import RenderingBasic from './screens/rendering-basic/RenderingBasic';
+import WrongFilter from './screens/wrong-filter/WrongFilter';
+import CorrectFilter from './screens/wrong-filter/CorrectFilter';
 
 function App() {
   return (
-    <>
-      <RenderingBasic />
-    </>
+    <div className="App">
+      <CorrectFilter />
+    </div>
   );
 }
 
