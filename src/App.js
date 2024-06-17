@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import './App.css';
-import StyleAdvance from './screens/style-advance/StyleAdvance';
+import SStyleBasic from './screens/sstyle-basic/SStyleBasic';
 
 function App() {
   return (
     <div className="App">
-      <StyleAdvance />
+      <SStyleBasic />
     </div>
   );
 }
