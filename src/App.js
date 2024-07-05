@@ -1,10 +1,10 @@
 import './App.css';
-import SStyleConditional from './screens/sstyle-conditional/SStyleConditional';
+import SStyleMedia from './screens/sstyle-media/SStyleMedia';
 
 function App() {
   return (
     <div className="App">
-      <SStyleConditional />
+      <SStyleMedia />
     </div>
   );
 }
