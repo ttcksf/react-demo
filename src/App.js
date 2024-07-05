@@ -1,11 +1,10 @@
-import { useState } from 'react';
 import './App.css';
-import SStyleBasic from './screens/sstyle-basic/SStyleBasic';
+import SStyleConditional from './screens/sstyle-conditional/SStyleConditional';
 
 function App() {
   return (
     <div className="App">
-      <SStyleBasic />
+      <SStyleConditional />
     </div>
   );
 }
