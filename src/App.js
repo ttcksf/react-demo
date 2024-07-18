@@ -1,10 +1,10 @@
 import './App.css';
-import SStyleMedia from './screens/sstyle-media/SStyleMedia';
+import TailWind1 from './screens/tw1/TailWind1';
 
 function App() {
   return (
     <div className="App">
-      <SStyleMedia />
+      <TailWind1 />
     </div>
   );
 }
