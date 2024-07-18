@@ -1,10 +1,10 @@
 import './App.css';
-import TailWind3 from './screens/tw3/TailWind3';
+import TailWind4 from './screens/tw4/TailWind4';
 
 function App() {
   return (
     <div className="App">
-      <TailWind3 />
+      <TailWind4 />
     </div>
   );
 }
