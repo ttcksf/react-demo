@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const TailWind5 = () => {
-  const [error, setError] = useState(false);
+  const [error, setError] = useState(true);
 
   let inputStyle = 'mt-8 p-4 border rounded';
   // if (error) {
