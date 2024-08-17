@@ -1,10 +1,10 @@
 import './App.css';
-import UseCallBackBasic from './screens/usecallback-basic/UseCallBackBasic';
+import UseMemoBasic from './screens/usememo-basic/UseMemoBasic';
 
 function App() {
   return (
     <div className="App">
-      <UseCallBackBasic />
+      <UseMemoBasic />
     </div>
   );
 }
