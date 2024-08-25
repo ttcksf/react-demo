@@ -1,10 +1,10 @@
 import './App.css';
-import UseMemoAdvance from './screens/usememo-advance/UseMemoAdvance';
+import PropsModify from './screens/props-modify/PropsModify';
 
 function App() {
   return (
     <div className="App">
-      <UseMemoAdvance />
+      <PropsModify />
     </div>
   );
 }
