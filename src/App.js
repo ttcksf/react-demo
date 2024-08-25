@@ -1,10 +1,10 @@
 import './App.css';
-import UseMemoBasic from './screens/usememo-basic/UseMemoBasic';
+import UseMemoAdvance from './screens/usememo-advance/UseMemoAdvance';
 
 function App() {
   return (
     <div className="App">
-      <UseMemoBasic />
+      <UseMemoAdvance />
     </div>
   );
 }
