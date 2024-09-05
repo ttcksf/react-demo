@@ -1,10 +1,10 @@
 import './App.css';
-import UseDocument from './screens/usedocument/UseDocument';
+import UseCounter from './screens/usecounter/UseCounter';
 
 function App() {
   return (
     <div className="App">
-      <UseDocument />
+      <UseCounter />
     </div>
   );
 }
