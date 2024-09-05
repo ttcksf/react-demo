@@ -1,10 +1,10 @@
 import './App.css';
-import PropsModify from './screens/props-modify/PropsModify';
+import UseDocument from './screens/usedocument/UseDocument';
 
 function App() {
   return (
     <div className="App">
-      <PropsModify />
+      <UseDocument />
     </div>
   );
 }
