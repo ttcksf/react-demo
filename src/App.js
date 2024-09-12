@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import './App.css';
-import ReactIcons from './screens/react-icons/ReactIcons';
+import ReactToast from './screens/react-toast/ReactToast';
 
 function App() {
   return (
     <div className="App">
-      <ReactIcons />
+      <ReactToast />
     </div>
   );
 }
