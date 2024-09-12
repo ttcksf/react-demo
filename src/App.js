@@ -1,10 +1,11 @@
+import { useState } from 'react';
 import './App.css';
-import UseInput from './screens/useinput/UseInput';
+import ReactIcons from './screens/react-icons/ReactIcons';
 
 function App() {
   return (
     <div className="App">
-      <UseInput />
+      <ReactIcons />
     </div>
   );
 }
