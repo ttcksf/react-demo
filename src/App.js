@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import './App.css';
-import ReactToast from './screens/react-toast/ReactToast';
+import ReactModal from './screens/react-modal/ReactModal';
 
 function App() {
   return (
     <div className="App">
-      <ReactToast />
+      <ReactModal />
     </div>
   );
 }
