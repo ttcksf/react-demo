@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import './App.css';
-import Tooltips from './screens/tooltips/Tooltips';
+import Count from './screens/count/Count.js';
 
 function App() {
   return (
     <div className="App">
-      <Tooltips />
+      <Count />
     </div>
   );
 }
