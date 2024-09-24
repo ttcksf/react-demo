@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import './App.css';
-import ReactCredit from './screens/react-credit/ReactCredit';
+import ReactDate from './screens/date-picker/ReactDate';
 
 function App() {
   return (
     <div className="App">
-      <ReactCredit />
+      <ReactDate />
     </div>
   );
 }
