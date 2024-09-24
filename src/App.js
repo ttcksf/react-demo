@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import './App.css';
-import ReactDate from './screens/date-picker/ReactDate';
+import ReactVideo from './screens/video-player/ReactVideo';
 
 function App() {
   return (
     <div className="App">
-      <ReactDate />
+      <ReactVideo />
     </div>
   );
 }
