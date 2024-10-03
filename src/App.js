@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import './App.css';
-import ReactVideo from './screens/video-player/ReactVideo';
+import Loading from './screens/loading/Loading';
 
 function App() {
   return (
     <div className="App">
-      <ReactVideo />
+      <Loading />
     </div>
   );
 }
